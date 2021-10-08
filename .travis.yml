@@ -8,3 +8,13 @@ before_install:
 
 script:
   - docker run -e CI=true dwivedig/react-with-docker npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "region-in-url"
+  app: "appNameInAWS"
+  env: "AWSENVName"
+  bucket_name: "AWS-S3-bucker-name"
+  bucker_path: "appNameInAWS"
+  on:
+   branch: master

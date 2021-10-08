@@ -17,4 +17,4 @@ deploy:
   bucket_name: "AWS-S3-bucker-name"
   bucker_path: "appNameInAWS"
   on:
-   branch: master
+   branch: main
